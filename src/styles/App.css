@@ -1,0 +1,159 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: #F5F8FC;
+  color: #223D61;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+header {
+  background: #0F1A47;
+  padding: 70px 0px;
+}
+
+.header-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.header-title a {
+  color: #FFF !important;
+  text-decoration: none !important;
+  transition: all 150ms ease-in-out;
+}
+
+.header-title a:hover {
+  cursor: pointer !important;
+}
+
+.header-title span {
+  font-size: 18px;
+  font-weight: normal;
+  color: #3DD73A !important;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+.input-group {
+  line-height: 67px;
+}
+
+input {
+  font-size: 16px;
+  padding: 20px 25px !important;
+  border: 0px !important;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 500px;
+  background: #FFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  outline: none !important;
+}
+
+input:focus,
+button:focus {
+  outline: none !important;
+}
+
+button {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 17px !important;
+
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 0px !important;
+  
+  padding: 20px !important;
+  line-height: 30px !important;
+  background: #175DF9 !important;
+  color: #FFF;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 15px rgba(23, 93, 249, 0.4);
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background: #1752d4 !important;
+}
+
+/* ==========================================
+   CONTENT AREA
+   ========================================== */
+
+.search-results {
+  padding: 50px 15px;
+}
+
+.heading-title {
+  font-weight: 600;
+}
+
+.heading-subtitle {
+  margin: 15px 0 0;
+  color: #5886C4;
+  font-size: 20px;
+}
+
+.content {
+  padding: 80px 15px;
+}
+
+.content ul {
+  padding-left: 0px;
+  margin-top: 25px;
+  list-style: none;
+}
+
+.content li {
+  padding-left: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  color: #3DD73A;
+  background-color: rgba(58, 215, 135, 0.2);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.checkmark .svg-inline--fa {
+  vertical-align: -6px;
+}
+
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 50px 0px;
+  }
+  .heading-title {
+    font-size: 25px;
+  }
+  .heading-subtitle {
+    font-size: 17px;
+  }
+  .content {
+    padding: 40px 15px;
+  }
+  .content li {
+    font-size: 13px;
+    padding-left: 40px;
+  }  
+  .checkmark {
+    width: 25px;
+    height: 25px;
+  }
+}
